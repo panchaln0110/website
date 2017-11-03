@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reader's Paradise</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/myPage3.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+</head>
+
+<body onload="bookBuy()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 col1">
+                <ul style="list-style-type: none">
+                    <li><i class="fa fa-phone">...</i> "(543) 564 4673</li>
+                    <li><i class="fa fa-envelope"></i> proud_geek10@gmail.com
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <span class="dropbtn">English
+        <i class= "fa fa-sort-down"></i>
+    </span>
+
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">English</a>
+                                </li>
+                                <li>
+                                    <a href="#">Polish</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deutsch</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col1">
+                <ul style="list-style-type: none" id="iconClass" class="icons">
+                    <li>
+                        <i class="fa fa-facebook-square"></i>
+                    </li>
+                    <li><i class="fa fa-twitter"></i>
+                    </li>
+                    <li><i class="fa fa-instagram"></i>
+                    </li>
+                    <li><i class="fa fa-pinterest"></i>
+                    </li>
+                    <li>
+                        <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Form -->
+        <div class="container-fluid">
+            <div class="container" id="bookList1">
+                <div class="row ">
+                    <div class="col-md-5" id="tab">
+                        <img src="" id="img_buy">
+                    </div>
+                    <div class="col-md-6" id="formtab">
+                        <div class="row ">
+                            <div id="buytab">
+                                <h2 id="title"></h2>
+                            </div>
+                        </div>
+                        <!--        <h2 id="title"></h2>   -->
+
+                        <form id="formdis" class="heading">
+                            <table id="tab1">
+                            <tr>
+                                <td>FirstName: </td>
+                                <td><input type="text" id="fname"></td>
+                                <td>
+                                    <div id="ferr"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> LastName:</td>
+                                <td><input type="text" id="lname"></td>
+                                <td><div id="lerr"></div></td>
+                            </tr>
+
+                            <tr>
+                                <td>Book:</td>
+                                <td></td>
+                                <td><div id="berr"></div></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="radio" id="copy">Get a copy</td>
+                                <td><input type="radio" id="ecopy">Kindle ebook</td>
+                            </tr>
+
+                            <tr>
+                                <td>Email Address: </td>
+                                <td><input type="email" id="emailadd"></td>
+                                <td><span><div id="eerr"></div></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Shipping Address: </td>
+                                <td><input type="text" id="addr"></td>
+                                <td><span><div id="serr"></div></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Phone: </td>
+                                <td><input type="tel" id="ph"></td>
+                                <td><span><div id="perr"></div></span></td>
+                            </tr>
+                            <tr>
+
+                                <td>State:</td>
+                                
+                                <td>
+                                    <select id="state">
+                                        <option>None</option>
+                                        <option>NJ</option>
+                                        <option>NY</option>
+                                        <option>FL</option>
+                                    </select>
+                                </td>
+                                <td><div id="sterr"></div></td>
+                            </tr>
+
+                            <tr>
+                                <td><span><b>Your total:</b></span></td>
+                                <td><span id="price"> </span></td>
+                            </tr>
+
+                            <tr>
+                                <td><span><b>Shipping charges:</b></span></td>
+                                <td><span id="shipCharge"></span></td>
+                            </tr>
+                        </table>
+                                </form>
+                            
+                        <!--            <button id="newDis" onmouseover="validateform()">Finish</button>-->
+                        <!--           <a href="../Html/myPage5.html">-->
+                        <button id="newDis" onclick="validateform()">Continue</button>
+                        <!--           </a>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Footer-->
+
+        <footer class="container-fluid bg-4" id="footer">
+            <div class="row">
+                <div class="col-sm-4 footer1">
+                    <h3 style="color:goldenrod">We are Proud Geeks</h3>
+                    <p>beGeek Webshop,LLC</p>
+                    <p>South Washington Street 828,Washington, USA <br> Phone 234 282 3740/272 732 3234
+                    </p>
+                </div>
+                <div class="col-sm-3 footer1">
+                    <h3 style="color:goldenrod">My Account</h3>
+                    Cart<br> Checkout
+                    <br> MyAccount
+                    <br>
+                </div>
+                <div class="col-sm-2 footer1">
+                    <h3 style="color:goldenrod">Information</h3>
+                    Customer Assistance<br> Delivery Informations<br> International Shipping<br>
+                </div>
+                <div class="col-sm-3 footer1">`
+                    <h3 style="color:goldenrod">About Us</h3>
+                    We welcome to our haven of fictious world, mysterious<br> characters and a trip to adventureland.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="../Js/myPage4.js" /myPage4.js></script>
+</body>
+
+</html>
